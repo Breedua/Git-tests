@@ -1,16 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ALX PERSONAL PRACTICE WEBSITE</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="user123" class="user-card" data-user-level="novice" style="border: 1px solid #000;">
+            <p class="highlight">Name: Jane Doe</p>
+            <p>Interests: HTML, CSS, JavaScript</p>
+            <p>Email: jane.doe@example.com</p>
+        </div>
+
+        <!-- Examples of different types of tags and special characters. Take note of the p-class=highlight, thats where the special characters are. -->
+        <div>
+            <p class="user-card">This is an example of a paragraph in HTML.</p>
+
+            <p class="p">Notice how it makes the text easier to read.<br> Honestly if i cant create a blog, portfolio and write a book at the end, i'd really be disappionted in myself.</p>
+            <p>I <strong>strongly</strong> recommend using <em>emphasis</em> tags like <strong>strong</strong> and <em>em</em> to highlight important text. Also, don't forget about <sub>subscript</sub> and <sup>superscript</sup> for details like H<sub>2</sub>O and E=mc<sup>2</sup>.</p>
+            <p class="highlight">Special characters like &amp;, &lt;, &gt;, and &nbsp; are essential for web development. Remember to use &copy; or &reg; for copyright or registered symbols, respectively.</p>
+        </div>
+
+        <!-- Example of description lists(dl) and how to organise them; from description title(dt) to description details(dd) -->
+        <div class="user-card">
+            <dl>
+                <dt>Preheat</dt>
+                <dd>Heat (an oven or grill) beforehand.</dd>
+                <dt>Bake</dt>
+                <dd>Cook (food) by dry heat without direct exposure to a flame, typically in an oven.</dd>
+            </dl>
+        </div>
+
         <section>
-            <p> Git tests on and on</p>
-            <h1> further git terminal tests</h1>
+            <table>
+                <caption>Monthly Savings</caption>
+                <tr>
+                  <th>Month</th>
+                  <th>Savings</th>
+                  <th scope="col">Month</th>
+                  <th scope="col">Savings</th>
+                  <tr>
+                    <th>Person</th>
+                    <th colspan="2">Details</th>
+                </tr>
+                </tr>
+                <tr>
+                    <th scope="row">January</th>
+                    <td>$100</td>
+                  </tr>
+                <tr>
+                  <td>January</td>
+                  <td>$100</td>                  
+                </tr>
+                <tr>
+                  <td>February</td>
+                  <td>$80</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Age: 30</td>
+                    <td>Occupation: Developer</td>
+                </tr>
+              </table>
         </section>
-    </main>
-</body>
+
+
+        <style>
+            .user-card {
+                background-color: #f0f0f0;
+                padding: 20px;
+                margin: 10px 0;
+            }
+            .highlight {
+                color: green;
+            }
+            .p {
+                background-color: #f0f0f0;
+                padding: 20px;
+                margin: 10px 0;
+                border: 1px solid #000;
+            }
+/* Begining of a fantastic ALX approved styling for header and the navBar */
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            nav li {
+                float: left;
+            }
+
+            nav li a {
+                display: block;
+                color: white;
+                text-align: center;
+                 padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            nav li a:hover {
+                background-color: #111;
+            } 
+            /* The end of fantastic header/navbar styling */
+        </style>
+    </body>
 </html>
